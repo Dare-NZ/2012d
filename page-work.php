@@ -28,17 +28,13 @@ Template name: Work
 						<p>
 						<strong>Posted:</strong>  <?php the_date() ?>
 						</p>
-						<!-- client -->
-						<p>
-						<strong>Client:</strong> 
-						</p>
 						<!-- link -->
 						<p>
-						<strong>Link:</strong> 
+						<strong>Link: </strong><a href="<?php the_permalink() ?>">Click here</a>
 						</p>
 				</div>
 				<div class="content">
-						<h2><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h2>
+						<h2><span><a href="<?php the_permalink() ?>"><?php the_title() ?></a></span></h2>
 						<p><?php the_excerpt() ?></p>
 				</div>
 				

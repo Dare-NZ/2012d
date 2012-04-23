@@ -5,13 +5,15 @@
 	<div class="wrapper">
 	<!-- portfolio block -->
 	<!-- some blurb -->
-			
-			<?php the_post_thumbnail('single-thumbnail'); ?>
-			<div class="post">
-
-			<?php the_content(); ?>
-
+			<div class="inner">
+			<?php the_post_thumbnail('920x220'); ?>
 			</div>
+			<div class="content-inner">
+				<div class="inner"><?php the_content(); ?></div>
+			</div>
+			
+			<div class="sidebar"></div>
+			
 			<div class="clr"></div>
 
 	<!-- skills section -->
