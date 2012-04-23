@@ -1,0 +1,3 @@
+[06-Apr-2012 22:49:31] PHP Fatal error:  Call to undefined function  bloginfo() in /home1/novoalia/public_html/joeswann/wp-content/themes/2012c/includes/tumblr.php on line 39
+[06-Apr-2012 22:59:05] PHP Parse error:  syntax error, unexpected T_STRING in /home1/novoalia/public_html/joeswann/wp-content/themes/2012c/includes/tumblr.php on line 7
+[06-Apr-2012 23:03:51] PHP Parse error:  syntax error, unexpected T_FOREACH in /home1/novoalia/public_html/joeswann/wp-content/themes/2012c/includes/tumblr.php on line 39

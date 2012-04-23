@@ -1,33 +1,6 @@
+<?php wp_footer(); ?>
 <div class="footer">
-	<div class="wrapper">
-		<div class="col">
-			<h2>About us</h2>
-			<p></p>
-		</div>
-		<div class="col">
-			<h2>Sub menu</h2>
-			<ul class="menu">
-				<!-- depending on theme options -->
-				<li><a href="#">Menu item</a></li>
-			</ul>
-		</div>
-		<div class="col">
-			<h2>Contact us</h2>
-			<p>
-			
-			</p>
-		</div>
-		<div class="col">
-			<h2>Social</h2>
-			<ul class="social">
-				<!-- depending on theme options -->
-				<li class="fb"><a href="#">Facebook</a></li>
-				<li class="tw"><a href="#">Twitter</a></li>
-				<li class="li"><a href="#">Linked in</a></li>
-			</ul>
-		</div>
-	</div>
-<div class="clr"></div>
+	<div class="wrapper"><div class="copyright">Copyright Joe Swann 2012</div></div>
 </div>
 
 <!-- test for script -->
@@ -55,6 +28,5 @@
 		</div>
 	</div>
 </div>
-<?php wp_footer(); ?>
 </body>
 </html>

@@ -1,16 +1,21 @@
 <?php get_header(); ?>
-<div class="content">
-<div class="wrapper">
-<div class="content-inner">
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-	<h1><?php the_title() ?></h1>
-	<?php the_content() ?>
-<?php endwhile; ?>
+<div class="slider"><?php the_title(); ?></div>
+<div class="content">
+	<div class="wrapper">
+	<!-- portfolio block -->
+	<!-- some blurb -->
+	<div class="inner">
+			
+			<h1><?php the_title(); ?></h1>
+			<?php the_content(); ?>
+
+		
+		
+	</div>
+	<!-- skills section -->
+	<!-- cta -->
+	</div>
 </div>
-<div class="sidebar">
-<?php get_sidebar(); ?>
-</div>
-<div class="clr"></div>
-</div>
-</div>
+<?php endwhile ?>
 <?php get_footer(); ?>
