@@ -1,9 +1,16 @@
 <?php
+<<<<<<< HEAD
 /*
 if (!current_user_can('manage_options')) {  
     wp_die('You do not have sufficient permissions to access this page.');  
 }  
 */
+=======
+
+if (!current_user_can('manage_options')) {  
+    wp_die('You do not have sufficient permissions to access this page.');  
+}  
+>>>>>>> cbd76a282b3688fb5525e48bf8ae9b296ae2d84e
 
 
 function setup_theme_admin_menus() {  

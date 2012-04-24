@@ -27,7 +27,11 @@ get_header(); ?>
         </div>
         <img src="<?php bloginfo('template_url') ?>/images/home/process.png" alt="">
         <div class="inner">
+<<<<<<< HEAD
             <h2><span>Services / Skillset</span></h2>
+=======
+            <h2><span>My Skillset</span></h2>
+>>>>>>> cbd76a282b3688fb5525e48bf8ae9b296ae2d84e
             <script type="text/javascript">
                     Raphael.fn.pieChart = function (cx, cy, r, values, labels, stroke, colours) {
                     var paper = this,
@@ -61,12 +65,20 @@ get_header(); ?>
                                 txt.stop().animate({opacity: 1}, ms, "elastic");
                                     $('#details').animate({'margin-top' :  -(133 * 4) + (-133 * j) + 'px'});
                                     $('#details li h2').css({'color' : '#ccc'});
+<<<<<<< HEAD
                                     $('#details li:eq(' + (5 + j) + ') h2').css({'color' : '#000'});
                                     console.log(j);
                             }).mouseout(function () {
                                 p.stop().animate({transform: ""}, ms, "elastic");
                                 txt.stop().animate({opacity: 0.5}, ms);
                             });/*.click(function() {
+=======
+                                    $('#details li:eq(' + 7 + j  + ') h2').css({'color' : '#000'});
+                            }).mouseout(function () {
+                                p.stop().animate({transform: ""}, ms, "elastic");
+                                txt.stop().animate({opacity: 0.5}, ms);
+                            }).click(function() {
+>>>>>>> cbd76a282b3688fb5525e48bf8ae9b296ae2d84e
                                 if(toggle == true){
                                     p.stop().animate({fill: '#000'}, ms, "elastic");
                                     txt.stop().animate({fill: "#fff"}, ms);
@@ -76,7 +88,11 @@ get_header(); ?>
                                     $('#details').animate({'margin-top' : '0'});
                                 }
                                 toggle = !toggle;
+<<<<<<< HEAD
                             });*/ 
+=======
+                            }); 
+>>>>>>> cbd76a282b3688fb5525e48bf8ae9b296ae2d84e
 
                             angle += angleplus;
                             chart.push(p);
@@ -106,10 +122,15 @@ get_header(); ?>
                     });
                     
                     $("table").hide();
+<<<<<<< HEAD
 
                     var size = 380;
                     
                     Raphael("holder", size, size).pieChart((size / 2), (size / 2), (size * .45), values, labels, "#fff", colours);
+=======
+                    
+                    Raphael("holder", 400, 400).pieChart(200, 200, 190, values, labels, "#fff", colours);
+>>>>>>> cbd76a282b3688fb5525e48bf8ae9b296ae2d84e
 
 
                     for (var i = 3; i >= 0; i--) {
@@ -120,6 +141,10 @@ get_header(); ?>
                     
                 });
             </script>
+<<<<<<< HEAD
+=======
+            <div class="switch">Skills / services</div>
+>>>>>>> cbd76a282b3688fb5525e48bf8ae9b296ae2d84e
             <table>
                 <tbody>
                     <tr>

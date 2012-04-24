@@ -1,4 +1,5 @@
 .htaccess
+*.orig
 wp-*.php
 xmlrpc.php
 wp-admin/
