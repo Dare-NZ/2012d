@@ -9,4 +9,5 @@ add_image_size( 'small', 100, 100, true );
  add_image_size( 'single-thumbnail', 480, 999, true ); 
 
  add_image_size( '920x220', 920, 220, true ); 
+ add_image_size( '215x150', 215, 150, true ); 
 

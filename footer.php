@@ -1,6 +1,6 @@
 <?php wp_footer(); ?>
 <div class="footer">
-	<div class="wrapper"><div class="copyright">Copyright Joe Swann 2012</div></div>
+	<div class="wrapper"><div class="copyright">Copyright Joe Swann <?php echo date('Y', time()) ?></div></div>
 </div>
 
 <!-- test for script -->
