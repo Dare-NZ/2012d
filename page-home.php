@@ -16,22 +16,53 @@ get_header(); ?>
             <h1><span>Make me your web designer.</span></h1>
             <div class="half">
                 <p>It’s hard to build a good website these days. Not only do you have to have a design, it also has to work well. It has to have a clear purpose and have users respond to the messages being presented. Add to that multiple browsers across a multitude of devices from mobile phones to digital desks and it starts to look like a task of behemothic proportions.</p>
-                <p>That’s where I come in. Not only can I wield photoshop like I was born to it, I can carry any design through to a fully functional battle hardened website.</p>
+                <p>That’s where I come in. Not only can I wield photoshop like I was born to it, I can carry any design through to a fully functional battle hardened web application.</p>
             </div>
             <div class="half">
-                <p>Need a content management system? I’ve got that covered. Search engine optimisation? Piece of cake. If youre trying to sell products securely online; or perhaps create a facebook app you’ve come to the right place. <strong>If it’s a challenge; I’m interested</strong>. Get in touch and we can talk.</p>
+                <p>Need a content management system? I’ve got that covered. Search engine optimisation? Piece of cake. If you're trying to sell products securely online; or perhaps create a facebook app you’ve come to the right place. <strong>If it’s a challenge; I’m interested</strong>. Get in touch and we can talk about it.</p>
                 <p>If you’re not actually looking for a web designer I may have something for you, too. I am always experimenting with new techniques and I have decided that since I believe in the open web I should share my toys.</p>
             </div>
             <div class="clr"></div>
-            <h2><span>The process.</span></h2>
+            <h2><span>services.</span></h2>
+            <script type="text/javascript">
+                $(document).ready(function(e){
+                   // $('#skills').bxSlider();
+                });
+            </script>   
+            <div class="slider-wrap" style="height:230px">
+                <ul id="skills" class="skills">
+                    <li>
+                        <div>
+                            <div class="fourth">
+                                <img src="<?php bloginfo('template_url') ?>/images/home/webdesign.png" alt="">
+                                <h2><span>Web design</span></h2>
+                                <p>I can design and build from your initial idea to a fully fledged and function web application fast, professionally and with a minimum of fuss.</p>
+                            </div>
+                            <div class="fourth">
+                                <img src="<?php bloginfo('template_url') ?>/images/home/cms.png" alt="">
+                                <h2><span>CMS deployments</span></h2>
+                                <p>Wordpress is a powerful PHP based CMS which makes it a piece of cake to produce a website that can be easily updated from anywhere online.</p>
+                            </div>
+                            <div class="fourth">
+                                <img src="<?php bloginfo('template_url') ?>/images/home/ecommerce.png" alt="">
+                                <h2><span>E-commerce</span></h2>
+                                <p>Using a powerful open source e-commerce framework I can help you create a powerful, flexible online store with a secure online payment gateway .</p>
+                            </div>
+                            <div class="fourth">
+                                <img src="<?php bloginfo('template_url') ?>/images/home/social.png" alt="">
+                                <h2><span>Social media</span></h2>
+                                <p>Email templates, facebook pages, google places and more. I am familiar with and capable of leveraging most PHP based social media API's</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li><img src="<?php bloginfo('template_url') ?>/images/home/process.png" alt=""></li>
+                    
+                </ul>
+            </div>
         </div>
-        <img src="<?php bloginfo('template_url') ?>/images/home/process.png" alt="">
+        
         <div class="inner">
-<<<<<<< HEAD
-            <h2><span>Services / Skillset</span></h2>
-=======
-            <h2><span>My Skillset</span></h2>
->>>>>>> cbd76a282b3688fb5525e48bf8ae9b296ae2d84e
+            <h2><span>Skillset</span></h2>
             <script type="text/javascript">
                     Raphael.fn.pieChart = function (cx, cy, r, values, labels, stroke, colours) {
                     var paper = this,
@@ -60,39 +91,18 @@ get_header(); ?>
                                 p = sector(cx, cy, r, angle, angle + angleplus, {fill: "90-" + colour + "-" + colour, stroke: stroke, "stroke-width": 0}),
                                 //txt = paper.text(cx + (r + delta + 20) * Math.cos(-popangle * rad), cy + (r + delta + 25) * Math.sin(-popangle * rad), labels[j]).attr({fill: bcolor, stroke: "none", opacity: 0, "font-size": 12});
                                 txt = paper.text(cx + ((r / textR) + delta + 0) * Math.cos(-popangle * rad), cy + ((r / textR) + delta + 0) * Math.sin(-popangle * rad), labels[j]).attr({fill: '#fff', stroke: "none", opacity: 0.5, "font-size": 13, "font-weight" : "bold"});
+                                $('#details li:eq(' + (5 + j) + ') h2').css({'color' : '#000'});
                             p.mouseover(function () {
                                 p.stop().animate({transform: "s1.05 1.05 " + cx + " " + cy}, ms, "elastic");
                                 txt.stop().animate({opacity: 1}, ms, "elastic");
                                     $('#details').animate({'margin-top' :  -(133 * 4) + (-133 * j) + 'px'});
                                     $('#details li h2').css({'color' : '#ccc'});
-<<<<<<< HEAD
                                     $('#details li:eq(' + (5 + j) + ') h2').css({'color' : '#000'});
                                     console.log(j);
                             }).mouseout(function () {
                                 p.stop().animate({transform: ""}, ms, "elastic");
                                 txt.stop().animate({opacity: 0.5}, ms);
-                            });/*.click(function() {
-=======
-                                    $('#details li:eq(' + 7 + j  + ') h2').css({'color' : '#000'});
-                            }).mouseout(function () {
-                                p.stop().animate({transform: ""}, ms, "elastic");
-                                txt.stop().animate({opacity: 0.5}, ms);
-                            }).click(function() {
->>>>>>> cbd76a282b3688fb5525e48bf8ae9b296ae2d84e
-                                if(toggle == true){
-                                    p.stop().animate({fill: '#000'}, ms, "elastic");
-                                    txt.stop().animate({fill: "#fff"}, ms);
-                                } else {
-                                    p.stop().animate({fill: colour}, ms, "elastic");
-                                    txt.stop().animate({fill: "#fff"}, ms);
-                                    $('#details').animate({'margin-top' : '0'});
-                                }
-                                toggle = !toggle;
-<<<<<<< HEAD
-                            });*/ 
-=======
-                            }); 
->>>>>>> cbd76a282b3688fb5525e48bf8ae9b296ae2d84e
+                            });
 
                             angle += angleplus;
                             chart.push(p);
@@ -122,16 +132,11 @@ get_header(); ?>
                     });
                     
                     $("table").hide();
-<<<<<<< HEAD
 
                     var size = 380;
                     
                     Raphael("holder", size, size).pieChart((size / 2), (size / 2), (size * .45), values, labels, "#fff", colours);
-=======
                     
-                    Raphael("holder", 400, 400).pieChart(200, 200, 190, values, labels, "#fff", colours);
->>>>>>> cbd76a282b3688fb5525e48bf8ae9b296ae2d84e
-
 
                     for (var i = 3; i >= 0; i--) {
                         $.each(desc, function(i1, v1){
@@ -141,10 +146,6 @@ get_header(); ?>
                     
                 });
             </script>
-<<<<<<< HEAD
-=======
-            <div class="switch">Skills / services</div>
->>>>>>> cbd76a282b3688fb5525e48bf8ae9b296ae2d84e
             <table>
                 <tbody>
                     <tr>

@@ -2,6 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="google-site-verification" content="T2h6HwiPcOg_IuVcAyDR-6G6mdhTe0KP0Nbs4782wmM" />
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	
 	<!-- wordpressy stuff -->
@@ -10,6 +11,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 	<link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/raphael-min.js"></script>
 
 	
@@ -17,6 +19,7 @@
 	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/isotope/jquery.isotope.min.js"></script>
 
 	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/raphael-min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/jquery.bxSlider.min.js"></script>
 
 	<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/slimbox/js/slimbox2.js"></script>
 	<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/js/slimbox/css/slimbox2.css" type="text/css" media="screen" />

@@ -10,7 +10,7 @@
 			<div class="upgrade">
 				<div class="inner">
 				<h2>No javascript?</h2>
-				<p>Sorry, but this website relies on javascript for functionality. Please enable javascript (or upgrade your browser) to view this site.</p>
+				<p>This website design relies on jQuery and javascript for functionality. Please enable javascript (or upgrade your browser) to view this site.</p>
 				</div>
 			</div>
 		</div>
@@ -23,7 +23,7 @@
 		<div class="upgrade">
 			<div class="inner">
 			<h2>Old browser?</h2>
-			<p>Sorry, but it appears you are running on an old or underpowered browser. This website makes use of features only supported by modern browsers. Please upgrade.</p>
+			<p>It appears you are running on an old or underpowered browser. This website makes use of features only supported by modern browsers. Please upgrade.</p>
 			</div>
 		</div>
 	</div>

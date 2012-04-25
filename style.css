@@ -24,11 +24,11 @@ Author URI: http://www.joeswann.co.nz
 body, html { position:relative; min-height:100%; overflow:auto; }
 body { font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:18px; color:#444; background:#fff;  }
 h1, h2, h3, h4, h5, h6, p, ul { margin-bottom:0.5em; }
-h1, h2, h3, h4, h5, h6 { font-family: 'Doppio One', serif; }
-.slider { font-family: 'Doppio One', sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', serif;letter-spacing:1px}
+.slider { font-family: 'Oswald', sans-serif; }
 img { margin:0; padding:0; border:0 }
-h1 { font-size:18px; font-weight:bold; margin-bottom:0.5em; } 
-h2 { font-size:16px; font-weight:bold }
+h1 { font-size:20px;text-transform:uppercase; font-weight:bold; margin-bottom:0.5em; } 
+h2 { font-size:16px;text-transform:uppercase; font-weight:bold }
 p { margin-bottom:0.5em; line-height:18px; font-size:13px;color:#8b8b8b; }
 a { color:#04bfbf; text-decoration:none; }
 a:hover {color:#1ec6c6}
@@ -47,10 +47,10 @@ blockquote { border-left:4px solid #666; background:#eee; padding:20px; margin:2
 .contact .wrapper .fourth { width:25%; float:left; }
 .contact .tab { display:block; position:absolute; bottom:-40px; right:10px; width:32px; height:32px; text-indent:-9999px; background:url('images/contact_32.png') center no-repeat; color:#fff; line-height:30px; text-align:center; }
 .contact .wrapper input[type=text] { padding:0; margin:0; border:none; background:#222; line-height:30px; padding-left:10px; }
-.contact .wrapper input[type=text] { color:#444; font-size:12px; width:200px; }
+.contact .wrapper input[type=text] { color:#aaa; font-size:12px; width:200px; }
 .contact .wrapper textarea { padding:0; margin:0; border:none; background:#222; line-height:20px; padding:10px }
-.contact .wrapper textarea { color:#444; font-size:12px; width:200px; height:100px }
-.contact .wrapper input[type=submit] { padding:10px; margin:0; background:#222; border:none; color:#fff;cursor:pointer; }
+.contact .wrapper textarea { color:#aaa; font-size:12px; width:200px; height:100px }
+.contact .wrapper input[type=submit] { padding:10px; margin:0; background:#222; border:none; color:#aaa;cursor:pointer; }
 .contact .wrapper input[type=submit]:hover {background:#666;}
 
 .nav-bar { height:80px; margin-bottom:80px; margin-top:-10px; position: relative; }
@@ -130,7 +130,7 @@ blockquote { border-left:4px solid #666; background:#eee; padding:20px; margin:2
 .home .content .details li h2 {float:left;margin:0;margin-right:20px;line-height:113px;width:120px;font-size:16px;background:none;color:#ccc;text-align:right;}
 .home .content .details li .bar {position:absolute;top:10px;right:0;width:370px;height:20px;background:#ddd;}
 .home .content .details li p {margin-top:10px;}
-
+ 
 .home .content .inner .cta { height:80px; background:#eee; border:1px solid #ddd; position:relative }
 .home .content .inner .cta .message { width:607px; height:80px; line-height:80px; text-align:center; }
 .home .content .inner .cta .button { position:absolute; right:0; top:0; height:100%; width:293px; background:#444; }
@@ -141,3 +141,14 @@ blockquote { border-left:4px solid #666; background:#eee; padding:20px; margin:2
 .home .slider .overlay {position:absolute;top:0;left:0;width:100%;height:100%;background:url('images/feature-overlay-home.png') top left repeat}
 .home .slider .text {position:relative;width:960px;margin:0 auto;height:100%;background:url('images/feature-text-home.png') 50% 140px no-repeat}
 .home .slider .zigzag {position:absolute;bottom:-4px;left:0;width:100%;height:9px;background:url('images/feature-zigzag-home.png') bottom left repeat-x}
+
+.home .skills {margin-top:40in:spampx;}
+.home .skills h2 {background: none;margin-top:40px;}
+.home .skills h2 span {background: none}
+.home .skills img {display:block;margin: 20px auto 0 auto;}
+
+.slider-wrap .bx-prev,
+.slider-wrap .bx-next {position:absolute;top:0;width:25px;height:25px;text-indent:-9999px;}
+
+.slider-wrap .bx-prev {right:50px;background:url('images/prev.png') no-repeat;}
+.slider-wrap .bx-next {right:0px;background:url('images/next.png') no-repeat;}
