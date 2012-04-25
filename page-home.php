@@ -8,7 +8,6 @@ get_header(); ?>
 <div class="slider">
     <div class="overlay"></div>
     <div class="text"></div>
-    <div class="zigzag"></div>
 </div>
 <div class="content">
     <div class="wrapper">
@@ -23,45 +22,47 @@ get_header(); ?>
                 <p>If you’re not actually looking for a web designer I may have something for you, too. I am always experimenting with new techniques and I have decided that since I believe in the open web I should share my toys.</p>
             </div>
             <div class="clr"></div>
-            <h2><span>services.</span></h2>
             <script type="text/javascript">
                 $(document).ready(function(e){
                    // $('#skills').bxSlider();
                 });
             </script>   
-            <div class="slider-wrap" style="height:230px">
+            <div class="slider-wrap" style="min-height:230px">
                 <ul id="skills" class="skills">
                     <li>
                         <div>
+                            <h2><span>services.</span></h2>
                             <div class="fourth">
                                 <img src="<?php bloginfo('template_url') ?>/images/home/webdesign.png" alt="">
-                                <h2><span>Web design</span></h2>
+                                <h3><span>Web design</span></h3>
                                 <p>I can design and build from your initial idea to a fully fledged and function web application fast, professionally and with a minimum of fuss.</p>
                             </div>
                             <div class="fourth">
                                 <img src="<?php bloginfo('template_url') ?>/images/home/cms.png" alt="">
-                                <h2><span>CMS deployments</span></h2>
+                                <h3><span>CMS deployments</span></h3>
                                 <p>Wordpress is a powerful PHP based CMS which makes it a piece of cake to produce a website that can be easily updated from anywhere online.</p>
                             </div>
                             <div class="fourth">
                                 <img src="<?php bloginfo('template_url') ?>/images/home/ecommerce.png" alt="">
-                                <h2><span>E-commerce</span></h2>
+                                <h3><span>E-commerce</span></h3>
                                 <p>Using a powerful open source e-commerce framework I can help you create a powerful, flexible online store with a secure online payment gateway .</p>
                             </div>
                             <div class="fourth">
                                 <img src="<?php bloginfo('template_url') ?>/images/home/social.png" alt="">
-                                <h2><span>Social media</span></h2>
+                                <h3><span>Social media</span></h3>
                                 <p>Email templates, facebook pages, google places and more. I am familiar with and capable of leveraging most PHP based social media API's</p>
                             </div>
+                            <div class="clr"></div>
                         </div>
                     </li>
-                    <li><img src="<?php bloginfo('template_url') ?>/images/home/process.png" alt=""></li>
+                    <li>
+                    <h2><span>The process.</span></h2>
+                    <img src="<?php bloginfo('template_url') ?>/images/home/process.png" alt="" style="margin-top:40px;">
+                </li>
                     
                 </ul>
             </div>
-        </div>
-        
-        <div class="inner">
+        <div class="clr"></div>
             <h2><span>Skillset</span></h2>
             <script type="text/javascript">
                     Raphael.fn.pieChart = function (cx, cy, r, values, labels, stroke, colours) {
@@ -102,6 +103,7 @@ get_header(); ?>
                             }).mouseout(function () {
                                 p.stop().animate({transform: ""}, ms, "elastic");
                                 txt.stop().animate({opacity: 0.5}, ms);
+                                $('#details li h2').css({'color' : '#ccc'});
                             });
 
                             angle += angleplus;
@@ -185,7 +187,7 @@ get_header(); ?>
                         <td class="value">100</td>
                         <td class="colour">#69194c</td>
                         <td class="altValue">50</td>
-                        <td class="desc">Ubuntu, Photoshop, 3ds Max, Rhino, </td>
+                        <td class="desc">Git, Office, Flash, Illustrator, 3DS Max, Rhino, Linux, OSX, name it and I've probably learned it. And if I haven't I can learn it. Fast.</td>
                         <td class="details">Lorem ipsum</td>
                     </tr>
                 </tbody>

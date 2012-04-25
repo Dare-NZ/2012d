@@ -22,7 +22,7 @@ Author URI: http://www.joeswann.co.nz
 
 /* main content */
 body, html { position:relative; min-height:100%; overflow:auto; }
-body { font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:18px; color:#444; background:#fff;  }
+body { font-family:Helvetica, Arial, sans-serif; font-size:12px; line-height:18px; color:#444; background:#000 url('images/bg.png') repeat;  }
 h1, h2, h3, h4, h5, h6, p, ul { margin-bottom:0.5em; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', serif;letter-spacing:1px}
 .slider { font-family: 'Oswald', sans-serif; }
@@ -63,7 +63,7 @@ blockquote { border-left:4px solid #666; background:#eee; padding:20px; margin:2
 .nav-bar .menu-primary-container ul li a { }
 .nav-bar .menu-primary-container ul li a:hover { color:#04BFBF }
 
-.slider { height:120px; /*background:#04BFBF;*/background:#000; margin-top:-170px;padding-top:80px;font-size:52px; position:relative; z-index:0; line-height:40px;font-weight:bold;color:#fff;text-align:center;}
+.slider { height:160px; /*background:#04BFBF;*/background:#000; margin-top:-170px;padding-top:80px;font-size:52px; position:relative; z-index:0; line-height:40px;font-weight:bold;color:#fff;text-align:center;}
 .slider h2 {;font-size:52px;}
 .slider h3 {font-style:italic;font-size:16px;}
 .wp-post-image {float:left;}
@@ -121,8 +121,11 @@ blockquote { border-left:4px solid #666; background:#eee; padding:20px; margin:2
 .footer .wrapper { height:60px; background:#000; margin-bottom:0; }
 .footer .wrapper .copyright { line-height:60px; color:#fff; }
 
-.home .header { position:relative; z-index:99;background:#1a1a1a; }
-.home .content { margin-top:-60px; position:relative; z-index:99; margin-bottom:40px; }
+.home .header { position:relative; z-index:99;background:none; }
+.home .nav-bar .menu-primary-container ul li a {color:#111}
+.home .nav-bar .menu-primary-container ul li a:hover {color:#fff}
+
+.home .content { margin-top:-60px; position:relative; z-index:99; margin-bottom:none; }
 
 .home .content .details {height:399px;width:520px;overflow:hidden;}
 .home .content .details li {height:113px;padding:10px;position:relative;}
@@ -137,15 +140,16 @@ blockquote { border-left:4px solid #666; background:#eee; padding:20px; margin:2
 .home .content .inner .cta .button { line-height:80px; color:#fff; text-align:center; font-size:16px; text-decoration:none }
 .home .content .inner .cta .button:hover { background:#333; }
 
-.home .slider { padding-top:0;height:366px; background:#35475c url('images/feature-home.jpg') bottom center no-repeat ; margin-top:-170px; position:relative; z-index:0; border-bottom:1px solid #bbb }
+.home .slider { padding-top:0;height:316px; background:#35475c url('images/feature-home.jpg') bottom center no-repeat ; margin-top:-170px; position:relative; z-index:0; border-bottom:1px solid #bbb }
 .home .slider .overlay {position:absolute;top:0;left:0;width:100%;height:100%;background:url('images/feature-overlay-home.png') top left repeat}
-.home .slider .text {position:relative;width:960px;margin:0 auto;height:100%;background:url('images/feature-text-home.png') 50% 140px no-repeat}
+.home .slider .text {position:relative;width:960px;margin:0 auto;height:100%;background:url('images/feature-text-home.png') 50% 110px no-repeat}
 .home .slider .zigzag {position:absolute;bottom:-4px;left:0;width:100%;height:9px;background:url('images/feature-zigzag-home.png') bottom left repeat-x}
 
 .home .skills {margin-top:40in:spampx;}
-.home .skills h2 {background: none;margin-top:40px;}
-.home .skills h2 span {background: none}
-.home .skills img {display:block;margin: 20px auto 0 auto;}
+.home .skills h2 {margin-top:40px;}
+.home .skills h3 {background:none;font-size:16px;text-transform:uppercase;}
+
+.home .skills img {display:block;margin: 20px auto 20px auto;}
 
 .slider-wrap .bx-prev,
 .slider-wrap .bx-next {position:absolute;top:0;width:25px;height:25px;text-indent:-9999px;}
