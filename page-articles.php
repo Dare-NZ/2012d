@@ -27,7 +27,6 @@ Template name: Articless
 						<h2><span><a href="<?php the_permalink() ?>"><?php the_title() ?></a></span></h2>
 						<p><?php echo $sdesc ?></p>
 				</div>
-				
 				<div class="clr"></div>
 			</div>
 
