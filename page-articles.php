@@ -21,17 +21,10 @@ Template name: Articless
 			?> 
 			<div class="article">
 				<div class="thumb">
-					<?php the_post_thumbnail('block'); ?>
-				</div>
-				<div class="info">
-						<!-- date -->
-						<p>
-						<strong>Posted:</strong> <?php the_date() ?>
-						</p>
-						<!-- link -->
-						<p>
-						<strong>Link: </strong> <a href="<?php the_permalink() ?>">Click here</a>
-						</p>
+					<?php
+		            $image = vt_resize( get_post_thumbnail_id() , '', 320, 150, true );
+		            echo "<img src='" . $image['url'] . "'' />";
+		            ?>
 				</div>
 				<div class="content">
 						<h2><span><a href="<?php the_permalink() ?>"><?php the_title() ?></a></span></h2>
@@ -42,6 +35,7 @@ Template name: Articless
 			</div>
 
 			<?php endwhile ?>
+			<div class="clr"></div>
 	</div>
 	</div>
 	<!-- skills section -->

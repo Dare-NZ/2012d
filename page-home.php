@@ -12,6 +12,7 @@ get_header(); ?>
 <div class="content">
     <div class="wrapper">
         <div class="inner">
+           
             <h1><span>Make me your web designer.</span></h1>
             <div class="half">
                 <p>It’s hard to build a good website these days. Not only do you have to have a design, it also has to work well. It has to have a clear purpose and have users respond to the messages being presented. Add to that multiple browsers across a multitude of devices from mobile phones to digital desks and it starts to look like a task of behemothic proportions.</p>

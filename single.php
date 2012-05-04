@@ -6,7 +6,11 @@
 	<!-- portfolio block -->
 	<!-- some blurb -->
 			<div class="inner">
-			<?php the_post_thumbnail('920x220'); ?>
+				 <?php
+            $thumb = get_post_thumbnail_id(); 
+            $image = vt_resize( $thumb, '', 940, 200, true );
+            echo "<img src='" . $image['url'] . "'' />";
+            ?>
 			</div>
 			<div class="content-inner">
 				<div class="inner"><?php the_content(); ?></div>
