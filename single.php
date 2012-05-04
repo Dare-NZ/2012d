@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-<div class="slider"><div class="wrapper"><?php the_title() ?></div></div>
 <div class="content single-post">
 	<div class="wrapper">
 	<!-- portfolio block -->
@@ -16,12 +15,9 @@
 				<div class="inner"><?php the_content(); ?></div>
 			</div>
 			
-			<div class="sidebar"></div>
+			<div class="sidebar"><?php get_sidebar() ?></div>
 			
 			<div class="clr"></div>
-
-	<!-- skills section -->
-	<!-- cta -->
 	</div>
 </div>
 <?php endwhile ?>

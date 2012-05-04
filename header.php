@@ -63,7 +63,7 @@
 		</div>
 	</div>
 </div>
-<?php if (is_home()) { ?>
+<?php if (is_page(953)) { ?>
 <div class="slider">
     <div class="overlay"></div>
     <div class="text"></div>
