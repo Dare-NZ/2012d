@@ -3,7 +3,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="google-site-verification" content="T2h6HwiPcOg_IuVcAyDR-6G6mdhTe0KP0Nbs4782wmM" />
-	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<title><?php wp_title(  ); ?></title>
 	
 	<!-- wordpressy stuff -->
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -64,18 +64,4 @@
 	</div>
 </div>
 
-<div id="contact" class="contact">
-	<div class="wrapper">
-	<?php 
-		$args = array('page_id' => 195 );
-		$the_query = new WP_Query( $args );
-		while ( $the_query->have_posts() ) : $the_query->the_post();
-	?> 
-		<?php the_content() ?>
-	<?php
-		endwhile;
-	?>
-	<div class="clr"></div>
-	</div>
-	<a href="#" id="contact-tab" class="tab">Contact</a>
-</div>			
+		

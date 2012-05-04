@@ -2,6 +2,22 @@
 <div class="footer">
 	<div class="wrapper"><div class="copyright">Copyright Joe Swann <?php echo date('Y', time()) ?></div></div>
 </div>
+<!-- contact bar -->
+<div id="contact" class="contact">
+	<div class="wrapper">
+	<?php 
+		$args = array('page_id' => 195 );
+		$the_query = new WP_Query( $args );
+		while ( $the_query->have_posts() ) : $the_query->the_post();
+	?> 
+		<?php the_content() ?>
+	<?php
+		endwhile;
+	?>
+	<div class="clr"></div>
+	</div>
+	<a href="#" id="contact-tab" class="tab">Contact</a>
+</div>	
 
 <!-- test for script -->
 <noscript>

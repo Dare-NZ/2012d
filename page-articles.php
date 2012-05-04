@@ -5,15 +5,13 @@ Template name: Articless
 ?>
 
 <?php get_header(); ?>
-<div class="slider">Articles</div>
+<div class="slider"><div class="wrapper">Articles</div></div>
 <div class="content">
 	<div class="wrapper">
 	<!-- portfolio block -->
 	<!-- some blurb -->
 	<div class="inner">
-	<div class="articles">
-			
-
+	<div class="articles twothird">
 			<?php 
 			$args = array('orderby' => 'rand', 'post_type' => 'article', 'posts_per_page' => 7 );
 			$the_query = new WP_Query( $args );
@@ -22,7 +20,7 @@ Template name: Articless
 			<div class="article">
 				<div class="thumb">
 					<?php
-		            $image = vt_resize( get_post_thumbnail_id() , '', 320, 150, true );
+		            $image = vt_resize( get_post_thumbnail_id() , '', 280, 150, true );
 		            echo "<img src='" . $image['url'] . "'' />";
 		            ?>
 				</div>
@@ -37,6 +35,7 @@ Template name: Articless
 			<?php endwhile ?>
 			<div class="clr"></div>
 	</div>
+	<div class="clr"></div>
 	</div>
 	<!-- skills section -->
 	<!-- cta -->

@@ -6,7 +6,7 @@ Template name: Inspiration
 
 <?php get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-<div class="slider"><?php the_title(); ?></div>
+<div class="slider"><div class="wrapper">Inspiration</div></div>
 <div class="content">
 	<div class="wrapper nobg">
 	<!-- portfolio block -->
@@ -20,9 +20,6 @@ Template name: Inspiration
 	</div>
 		<a id="next" class="load-more" href="#next">Load more</a>
 		<div class="clr"></div>
-		<div class="inner">	
-			<?php the_content(); ?>
-		</div>
 		<script type="text/javascript">
 			$(document).ready(function(e){
 				var total = <?php require_once(get_bloginfo('template_url') . '/includes/tumblr.php?getTotal'); ?>;
@@ -38,7 +35,7 @@ Template name: Inspiration
 					  url: "<?php echo get_bloginfo('template_url') . '/includes/tumblr.php?getPosts&url=' . get_bloginfo('template_url') ?>",
 					  type: "GET",
 					  data: {
-					  	getPosts : true,
+					  	getPosts : true, 
 					  	offset : offset
 					  },
 					  dataType: "html",
