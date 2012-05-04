@@ -63,5 +63,11 @@
 		</div>
 	</div>
 </div>
-
-		
+<?php if (is_home()) { ?>
+<div class="slider">
+    <div class="overlay"></div>
+    <div class="text"></div>
+</div>
+<?php } else { ?>
+<div class="slider"><div class="wrapper"><div class="title"><?php the_title() ?></div><div class="stripes">&nbsp;</div></div></div>
+<?php } ?>

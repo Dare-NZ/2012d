@@ -5,11 +5,9 @@ Template name: Articless
 ?>
 
 <?php get_header(); ?>
-<div class="slider"><div class="wrapper">Articles</div></div>
+
 <div class="content">
 	<div class="wrapper">
-	<!-- portfolio block -->
-	<!-- some blurb -->
 	<div class="inner">
 	<div class="articles twothird">
 			<?php 

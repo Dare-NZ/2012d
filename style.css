@@ -40,6 +40,7 @@ blockquote { border-left:4px solid #666; background:#eee; padding:20px; margin:2
 .clr { clear:both; height:0; overflow:hidden; }
 .header { position:relative; z-index:99;  }
 .right {float:right;}
+.wp-post-image {float:left;}
 
 .contact { width:100%; height:auto; left:0; top:-280px; position:absolute; z-index:999; background:#000; color:#fff; }
 .contact { -webkit-transition-duration: 0.5s; -webkit-transition-property:top; }
@@ -64,23 +65,18 @@ blockquote { border-left:4px solid #666; background:#eee; padding:20px; margin:2
 .nav-bar .menu-primary-container ul li a { }
 .nav-bar .menu-primary-container ul li a:hover { color:#04BFBF }
 
-.content h1,
-.content h2,
-.content h3,
-.content h4,
-.content h5,
-.content h6 {color:#596f88;background:url('images/divider.png') center repeat-x}
-.content h2 {margin-top:40px}
-.content h1 span,
-.content h2 span,
-.content h3 span,
-.content h4 span,
-.content h5 span,
-.content h6 span {background:#fff;padding-right:10px;}
+
+.content { margin-top:-20px; position:relative; z-index:99; padding-bottom:40px; }
+.content div {margin:0;padding:0;}
+.content .wrapper {
+-moz-box-shadow: 0px 0px 50px #ccc;
+-webkit-box-shadow: 0px 0px 50px #ccc;
+box-shadow: 0px 0px 50px #ccc;
+}
 .content .post { margin-left:500px; padding:20px; color:#666; }
 /* .content.single-post {margin-top:40px;} */
 .content .inner { margin:0; padding:20px; }
-.content .wrapper { background:#fff; min-height:300px; padding-bottom:0px; }
+.content .wrapper { background:#fff; min-height:300px; padding-bottom:0px; width:960px; margin: 0 auto; }
 .content .wrapper.nobg { background:none; }
 .content .wrapper .post { }
 .content .wrapper .post h2 { font-weight:bold; font-style:italic; }
@@ -97,27 +93,36 @@ blockquote { border-left:4px solid #666; background:#eee; padding:20px; margin:2
 .slider { height:90px; /*background:#04BFBF;*/background:#444 url('images/bg/dark_wood.png') top left repeat; margin-top:-170px;padding-top:130px;font-size:52px; position:relative; z-index:0; line-height:40px;font-weight:bold;color:#fff;}
 .slider h2 {font-size:52px;letter-spacing:2px;}
 .slider h3 {font-style:italic;font-size:16px;}
-.wp-post-image {float:left;}
-.content { margin-top:-20px; position:relative; z-index:99; padding-bottom:40px; }
-.content .wrapper {
--moz-box-shadow: 0px 0px 50px #ccc;
--webkit-box-shadow: 0px 0px 50px #ccc;
-box-shadow: 0px 0px 50px #ccc;
-}
-
-.footer { background:#000; }
-.footer .wrapper { height:60px; background:#000; margin-bottom:0; }
-.footer .wrapper .copyright { line-height:60px; color:#fff; }
-
-
+.slider .wrapper {display:table;}
+.slider .wrapper .title {display:table-cell;width:auto;padding-right:20px;}
+.slider .wrapper .stripes {display:table-cell;background:#fff;width:100%;margin-top:10px;}
 .slider-wrap .bx-prev,
 .slider-wrap .bx-next {position:absolute;top:0;width:25px;height:25px;text-indent:-9999px;}
 .slider-wrap .bx-prev {right:50px;background:url('images/prev.png') no-repeat;}
 .slider-wrap .bx-next {right:0px;background:url('images/next.png') no-repeat;}
 
+
+.footer { background:#000; }
+.footer .wrapper { height:40px; background:#000; margin-bottom:0; }
+.footer .wrapper .copyright { line-height:40px; color:#ccc; }
+
 .home .header { position:relative; z-index:99;background:none; }
 .home .nav-bar .menu-primary-container ul li a {color:#111}
 .home .nav-bar .menu-primary-container ul li a:hover {color:#fff}
+
+.home .content h1,
+.home .content h2,
+.home .content h3,
+.home .content h4,
+.home .content h5,
+.home .content h6 {color:#596f88;background:url('images/divider.png') center repeat-x}
+.home .content h2 {margin-top:40px}
+.home .content h1 span,
+.home .content h2 span,
+.home .content h3 span,
+.home .content h4 span,
+.home .content h5 span,
+.home .content h6 span {background:#fff;padding-right:10px;}
 
 .home .content { margin-top:-40px; position:relative; z-index:99; margin-bottom:none; padding-bottom:0; }
 .home .content .details {height:399px;width:520px;overflow:hidden;}
@@ -142,6 +147,12 @@ box-shadow: 0px 0px 50px #ccc;
 .skills h2 {margin-top:40px;}
 .skills h3 {background:none;font-size:16px;text-transform:uppercase;}
 .skills img {display:block;margin: 20px auto 20px auto;}
+
+.content .portfolio-list .portfolio-list-item {}
+.content .portfolio-list .portfolio-list-item + .portfolio-list-item {margin-top:10px;padding-top:10px;border-top:1px solid #ccc;}
+.content .portfolio-list .portfolio-list-item .thumb {float:left;}
+.content .portfolio-list .portfolio-list-item .content {margin-left:120px;}
+.content .portfolio-info {margin-top:40px;} 
 
 .articles .article { float:left; width:280px;}
 .articles .article + .article {margin-left:20px;}

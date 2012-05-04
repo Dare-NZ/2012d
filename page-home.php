@@ -5,10 +5,6 @@ Template name: Home
 
 get_header(); ?>
 
-<div class="slider">
-    <div class="overlay"></div>
-    <div class="text"></div>
-</div>
 <div class="content">
     <div class="wrapper">
         <div class="inner">

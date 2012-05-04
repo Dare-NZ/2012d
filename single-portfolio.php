@@ -5,6 +5,7 @@ Template name: Work
 ?>
 
 <?php get_header(); ?>
+<div class="slider"><div class="wrapper">Work</div></div>
 <div class="content">
 	<div class="wrapper">
 	<div class="inner">
@@ -12,7 +13,7 @@ Template name: Work
 			<div class="portfolio-list-wrap">
 				<div class="portfolio-list">
 					<?php 
-					$args = array('orderby' => 'rand', 'post_type' => 'portfolio', 'posts_per_page' => 7 );
+					$args = array('orderby' => 'rand', 'post_type' => 'portfolio', 'posts_per_page' => -1 );
 					$the_query = new WP_Query( $args );
 					while ( $the_query->have_posts() ) : $the_query->the_post();
 					?> 
@@ -33,22 +34,20 @@ Template name: Work
 			</div>
 			<div class="clr"></div>
 			<?php 
-			$args = array('orderby' => 'rand', 'post_type' => 'portfolio', 'posts_per_page' => 1 );
-			$the_query = new WP_Query( $args );
-			while ( $the_query->have_posts() ) : $the_query->the_post();
+			if ( have_posts() ) while ( have_posts() ) : the_post();
 			?> 
 		</div>
 		<div class="twothird right">
 			<div class="portfolio-slider-wrap">
 			 	<div class="portfolio-slider">
 			 		<?php
-		            $image = vt_resize( get_post_thumbnail_id() , '', 607, 300, true );
+		            $image = vt_resize( get_post_thumbnail_id() , '', 607, 313	, true );
 		            echo "<img src='" . $image['url'] . "'' />";
 		            ?>
 			 	</div>
 			 </div> 
 			<?php endwhile ?>
-			<div class="portfolio-info"<?php the_content() ?></div>
+			<div class="portfolio-info"><?php the_content() ?></div>
 		</div>
 		<div class="clr"></div>
 	</div>

@@ -6,7 +6,6 @@ Template name: Inspiration
 
 <?php get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-<div class="slider"><div class="wrapper">Inspiration</div></div>
 <div class="content">
 	<div class="wrapper nobg">
 	<!-- portfolio block -->
