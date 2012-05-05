@@ -24,10 +24,7 @@ get_header(); ?>
                    // $('#skills').bxSlider();
                 });
             </script>   
-            <div class="slider-wrap" style="min-height:230px">
-                <ul id="skills" class="skills">
-                    <li>
-                        <div>
+                        <div class="services">
                             <h2><span>services.</span></h2>
                             <div class="fourth">
                                 <img src="<?php bloginfo('template_url') ?>/images/home/webdesign.png" alt="">
@@ -51,14 +48,6 @@ get_header(); ?>
                             </div>
                             <div class="clr"></div>
                         </div>
-                    </li>
-                    <li>
-                    <h2><span>The process.</span></h2>
-                    <img src="<?php bloginfo('template_url') ?>/images/home/process.png" alt="" style="margin-top:40px;">
-                </li>
-                    
-                </ul>
-            </div>
         <div class="clr"></div>
             <h2><span>Skillset</span></h2>
             <script type="text/javascript">

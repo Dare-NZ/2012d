@@ -101,7 +101,6 @@ box-shadow: 0px 0px 50px #ccc;
 .slider-wrap .bx-prev {right:50px;background:url('images/prev.png') no-repeat;}
 .slider-wrap .bx-next {right:0px;background:url('images/next.png') no-repeat;}
 
-
 .footer { background:#000; }
 .footer .wrapper { height:40px; background:#000; margin-bottom:0; }
 .footer .wrapper .copyright { line-height:40px; color:#ccc; }
@@ -111,20 +110,12 @@ box-shadow: 0px 0px 50px #ccc;
 .home .nav-bar .menu-primary-container ul li a:hover {color:#fff}
 
 .home .content h1,
-.home .content h2,
-.home .content h3,
-.home .content h4,
-.home .content h5,
-.home .content h6 {color:#596f88;background:url('images/divider.png') center repeat-x}
+.home .content h2 {color:#596f88;background:url('images/divider.png') center repeat-x}
 .home .content h2 {margin-top:40px}
 .home .content h1 span,
-.home .content h2 span,
-.home .content h3 span,
-.home .content h4 span,
-.home .content h5 span,
-.home .content h6 span {background:#fff;padding-right:10px;}
+.home .content h2 span {background:#fff;padding-right:10px;}
 
-.home .content { margin-top:-40px; position:relative; z-index:99; margin-bottom:none; padding-bottom:0; }
+.home .content { margin-top:-40px; position:relative; z-index:99; margin-bottom:none;  }
 .home .content .details {height:399px;width:520px;overflow:hidden;}
 .home .content .details li {height:113px;padding:10px;position:relative;}
 .home .content .details li + li {border-top:1px solid #ddd;}
@@ -143,10 +134,10 @@ box-shadow: 0px 0px 50px #ccc;
 .home .slider .text {position:relative;width:960px;margin:0 auto;height:100%;background:url('images/feature-text-home.png') 50% 110px no-repeat}
 .home .slider .zigzag {position:absolute;bottom:-4px;left:0;width:100%;height:9px;background:url('images/feature-zigzag-home.png') bottom left repeat-x}
 
-.skills {margin-top:40px;}
-.skills h2 {margin-top:40px;}
-.skills h3 {background:none;font-size:16px;text-transform:uppercase;}
-.skills img {display:block;margin: 20px auto 20px auto;}
+.services {margin-top:40px;}
+.services h2 {margin-top:40px;}
+.services h3 {background:none;font-size:16px;text-transform:uppercase;}
+.services img {display:block;margin: 20px auto 20px auto;}
 
 .content .portfolio-list .portfolio-list-item {}
 .content .portfolio-list .portfolio-list-item + .portfolio-list-item {margin-top:10px;padding-top:10px;border-top:1px solid #eee;}

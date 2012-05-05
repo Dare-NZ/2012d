@@ -20,7 +20,7 @@ endwhile;
 			<div class="portfolio-list-wrap">
 				<div class="portfolio-list">
 					<?php 
-					$args = array('orderby' => 'asc', 'post_type' => 'portfolio', 'posts_per_page' => 7 );
+					$args = array('orderby' => 'asc', 'post_type' => 'portfolio', 'posts_per_page' => 4 );
 					$the_query = new WP_Query( $args );
 					while ( $the_query->have_posts() ) : $the_query->the_post();
 						$image = vt_resize( get_post_thumbnail_id() , '', 100, 60, true );
@@ -32,7 +32,10 @@ endwhile;
 								<a href="<?php the_permalink() ?>"><?php echo "<img src='" . $image['url'] . "'' />"; ?></a>
 							</div>
 							<div class="content">
-								<a href="<?php the_permalink() ?>"><h2 <?php echo $current ?>><span><?php the_title() ?></span></h2>
+								<a href="<?php the_permalink() ?>">
+									<h2 <?php echo $current ?>>
+										<span><?php the_title() ?></span>
+									</h2>
 								<p><?php echo $sdesc ?></p></a>
 							</div>
 							<div class="clr"></div>
@@ -57,10 +60,12 @@ endwhile;
 			 	</div>
 			 </div> 
 			<?php endwhile ?>
-			<div class="portfolio-info"><?php the_content() ?></div>
 		</div>
 		<div class="clr"></div>
+		
+			<div class="portfolio-info"><?php the_content() ?></div>
 	</div>
+
 	</div>
 </div>
 
