@@ -69,9 +69,9 @@ blockquote { border-left:4px solid #666; background:#eee; padding:20px; margin:2
 .content { margin-top:-20px; position:relative; z-index:99; padding-bottom:40px; }
 .content div {margin:0;padding:0;}
 .content .wrapper {
--moz-box-shadow: 0px 0px 50px #ccc;
--webkit-box-shadow: 0px 0px 50px #ccc;
-box-shadow: 0px 0px 50px #ccc;
+-moz-box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
+-webkit-box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 50px rgba(0,0,0,0.3);
 }
 .content .post { margin-left:500px; padding:20px; color:#666; }
 /* .content.single-post {margin-top:40px;} */
@@ -132,7 +132,7 @@ box-shadow: 0px 0px 50px #ccc;
 .home .slider { padding-top:0;height:316px; background:#35475c url('images/feature-home.jpg') bottom center no-repeat ; margin-top:-170px; position:relative; z-index:0; border-bottom:1px solid #bbb }
 .home .slider .overlay {position:absolute;top:0;left:0;width:100%;height:100%;background:url('images/feature-overlay-home.png') top left repeat}
 .home .slider .text {position:relative;width:960px;margin:0 auto;height:100%;background:url('images/feature-text-home.png') 50% 110px no-repeat}
-.home .slider .zigzag {position:absolute;bottom:-4px;left:0;width:100%;height:9px;background:url('images/feature-zigzag-home.png') bottom left repeat-x}
+.slider .zigzag {position:absolute;bottom:-4px;left:0;width:100%;height:10px;background:url('images/feature-zigzag-home.png') bottom left repeat-x}
 
 .services {margin-top:40px;}
 .services h2 {margin-top:40px;}
@@ -146,12 +146,17 @@ box-shadow: 0px 0px 50px #ccc;
 .content .portfolio-list .portfolio-list-item .content a:hover h2 {color:#000;}
 .content .portfolio-list .portfolio-list-item .content h2.current {color:#000;}
 .content .portfolio-info {margin-top:40px;} 
+.content .portfolio-list-controls {height:35px;background:#000;margin-top:10px;}
+.content .portfolio-slider-controls {height:35px;background:#000;}
 
-.articles .article { float:left; width:280px;}
-.articles .article + .article {margin-left:20px;}
-.articles .article + .clr {padding-bottom:40px}
-.articles .article h2 {background:none;margin:20px 0 0 0}
-.articles .article .content {margin:0;}
+.articles .article {border:1px solid #ddd;padding:20px;background:#eee;}
+.articles .article + .article {margin-top:20px;}
+.articles .article h2 {}
+.articles .article img {border:1px solid #ccc;}
+.articles .article .thumb {float:left;}
+.articles .article .info {margin-left:260px;}
+
+.single-post .image {margin-bottom:40px;}
 
 .tumblers .tumbler { position:relative; width:320px; background:#fff; float:left; height:auto; }
 .tumblers .tumbler .cover { opacity:0; background:#04BFBF url('images/plus.png') center no-repeat; position:absolute; left:0; top:0; width:100%; height:100%; }

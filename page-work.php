@@ -42,28 +42,36 @@ endwhile;
 						</div>
 					<?php endwhile ?>
 				</div>
+				<div class="portfolio-list-controls"><></div>
 			</div>
 			<div class="clr"></div>
 			<?php 
 			$args = array('orderby' => 'asc', 'post_type' => 'portfolio', 'posts_per_page' => 1 );
 			$the_query = new WP_Query( $args );
 			while ( $the_query->have_posts() ) : $the_query->the_post();
-			$image = vt_resize( get_post_thumbnail_id() , '', 607, 300, true );
+			$image = vt_resize( get_post_thumbnail_id() , '', 607, 313, true );
 			?> 
 		</div>
 		<div class="twothird right">
 			<div class="portfolio-slider-wrap">
 			 	<div class="portfolio-slider">
-			 		<?php
-		            echo "<img src='" . $image['url'] . "'' />";
-		            ?>
+			 		<?php  echo "<img src='" . $image['url'] . "'' />"; ?>
 			 	</div>
+			 	<div class="portfolio-slider-controls"></div>
 			 </div> 
 			<?php endwhile ?>
 		</div>
 		<div class="clr"></div>
-		
-			<div class="portfolio-info"><?php the_content() ?></div>
+
+		<div class="portfolio-info">
+			<div class=" twothird">
+				<h2><span><?php the_title() ?></span></h2><?php the_content() ?>
+			</div>
+			<div class=" third">
+				<h2><span>Services used</span></h2>Some services
+			</div>
+		</div>
+		<div class="clr"></div>
 	</div>
 
 	</div>

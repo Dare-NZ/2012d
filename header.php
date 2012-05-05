@@ -67,7 +67,14 @@
 <div class="slider">
     <div class="overlay"></div>
     <div class="text"></div>
+		<div class="zigzag"></div>
 </div>
 <?php } else { ?>
-<div class="slider"><div class="wrapper"><div class="title"><?php the_title() ?></div><div class="stripes">&nbsp;</div></div></div>
+<div class="slider">
+	<div class="wrapper">
+		<div class="title"><?php the_title() ?></div>
+		<div class="stripes">&nbsp;</div>
+		<div class="zigzag"></div>
+	</div>
+</div>
 <?php } ?>
