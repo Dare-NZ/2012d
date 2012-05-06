@@ -1,19 +1,39 @@
-<?php
 
 
-get_header(); ?>
+<?php get_header(); ?>
 
-<?php if ( have_posts() ) : ?>
-				<h1><?php printf( __( 'Search Results for: %s', 'twentyten' ), '' . get_search_query() . '' ); ?></h1>
-				<?php
-				
-				 get_template_part( 'loop', 'search' );
-				?>
-<?php else : ?>
-					<h2><?php _e( 'Nothing Found', 'twentyten' ); ?></h2>
-					<p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'twentyten' ); ?></p>
-					<?php get_search_form(); ?>
-<?php endif; ?>
+<div class="content">
+	<div class="wrapper">
+	<div class="inner">
+	<div class="articles twothird">
+			<?php 
+			while ( have_posts() ) : the_post();
+		    $image = vt_resize( get_post_thumbnail_id() , '', 240, 160, true );
+		    $sdesc = get_post_meta(get_the_id(), 'js_sdesc', true);
+			?> 
+			<div class="article">
+				<div class="thumb">
+					<?php
+		            echo "<img src='" . $image['url'] . "'' />";
+		            ?>
+				</div>
+				<div class="info">
+						<h2><span><a href="<?php the_permalink() ?>"><?php the_title() ?></a></span></h2>
+						<p><strong><?php echo $sdesc ?></strong></p>
+						<p><?php the_excerpt() ?></p>
+				</div>
+				<div class="clr"></div>
+			</div>
 
-<?php get_sidebar(); ?>
+			<?php endwhile ?>
+			<div class="clr"></div>
+	</div>
+	<div class="third"><?php get_sidebar() ?></div>
+	<div class="clr"></div>
+	</div>
+	<!-- skills section -->
+	<!-- cta -->
+	</div>
+</div>
+
 <?php get_footer(); ?>

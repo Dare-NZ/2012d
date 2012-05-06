@@ -6,12 +6,12 @@ $image = vt_resize( get_post_thumbnail_id() , '', 620, 160, true );
 	<div class="wrapper">
 	<!-- portfolio block -->
 	<!-- some blurb -->
-			<div class="content-inner">
+			<div class="twothird">
 				<div class="inner"><div class="image">
 				 <?php echo "<img src='" . $image['url'] . "'' />";  ?></div><?php the_content(); ?></div>
 			</div>
 			
-			<div class="sidebar"><div class="inner"> <?php get_sidebar() ?></div></div>
+			<div class="third"><div class="inner"> <?php get_sidebar() ?></div></div>
 			
 			<div class="clr"></div>
 	</div>
